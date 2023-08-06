@@ -1,0 +1,16 @@
+import React from "react";
+import { classNames } from "shared/lib/classNames/classNames";
+import cls from './Simple.module.scss';
+
+interface SimpleProps {
+    className?: string;
+}
+
+export const Simple = ({ className }: SimpleProps) => {
+   
+    return (
+        <div className={classNames(cls.Simple, {}, [className])}>
+
+        </div>
+    )
+}
